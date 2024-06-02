@@ -174,3 +174,23 @@ financial_trading_crew = Crew(
 )`
 
 # Running the Crew
+`# Example data for kicking off the process
+financial_trading_inputs = {
+    'stock_selection': 'AAPL',
+    'initial_capital': '100000',
+    'risk_tolerance': 'Medium',
+    'trading_strategy_preference': 'Day Trading',
+    'news_impact_consideration': True
+}`
+
+Note: LLMs can provide different outputs for they same input, so what you get might be different than what you see in the each case.
+
+`### this execution will take some time to run
+result = financial_trading_crew.kickoff(inputs=financial_trading_inputs)`
+
+Display the final result as Markdown.
+
+`from IPython.display import Markdown
+Markdown(result)`
+
+  
